@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>వెంకట దుర్గా స్టోర్స్ | Venkata Durga Stores</title>
+<style>
+:root{--green:#198754;--dark:#123524;--light:#f4fbf6;--gold:#f4b942}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"Noto Sans Telugu","Nirmala UI",Arial,sans-serif;color:#17301f;background:#fff}
+header{position:sticky;top:0;z-index:10;background:white;border-bottom:1px solid #e7eee9}
+.nav{max-width:1100px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-weight:800;font-size:19px;color:var(--dark);line-height:1.2}.logo span{color:var(--green);display:block;font-size:15px}
+nav a{margin-left:14px;text-decoration:none;color:#23452f;font-weight:700}
+.lang{border:1px solid #b8d8c2;background:white;color:var(--green);border-radius:9px;padding:8px 10px;font-weight:800;cursor:pointer}
+.hero{background:linear-gradient(135deg,#eaf8ee,#fff9e8);padding:55px 18px}
+.hero-inner{max-width:1100px;margin:auto}.badge{display:inline-block;background:#d9f2e1;color:#176b3f;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:700}
+h1{font-size:clamp(34px,7vw,58px);margin:16px 0 10px;line-height:1.12;color:var(--dark)}
+.hero p{font-size:18px;max-width:680px;color:#52675a;line-height:1.65}
+.btn{display:inline-block;padding:13px 18px;border-radius:10px;text-decoration:none;font-weight:800;margin:7px 7px 0 0}
+.primary{background:var(--green);color:white}.secondary{background:white;color:var(--green);border:1px solid #b8d8c2}
+section{max-width:1100px;margin:auto;padding:42px 18px}h2{font-size:30px;margin:0 0 22px;color:var(--dark)}
+.categories{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.cat{padding:20px 12px;border:1px solid #e1ebe4;border-radius:14px;background:#fff;text-align:center;font-weight:700}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{border:1px solid #e1ebe4;border-radius:15px;overflow:hidden;background:#fff;box-shadow:0 4px 14px #17301f0c}
+.pic{height:130px;background:#edf7ef;display:flex;align-items:center;justify-content:center;font-size:48px}
+.card-body{padding:15px}.card h3{margin:0 0 7px}.price{font-weight:800;font-size:18px;color:var(--green)}
+.add{width:100%;border:0;background:var(--green);color:#fff;padding:10px;border-radius:9px;margin-top:10px;font-weight:800;cursor:pointer}
+.offer{background:var(--dark);color:white;border-radius:18px;padding:28px}.offer h2{color:white}.offer p{color:#d7e8dc}
+.contact{background:var(--light)}.contact-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.info{background:white;padding:20px;border-radius:14px}.info strong{display:block;margin-bottom:7px}
+.cart{position:fixed;right:18px;bottom:18px;background:var(--green);color:white;padding:14px 18px;border-radius:50px;font-weight:800;box-shadow:0 8px 25px #0002;cursor:pointer;border:0}
+footer{background:#102c1d;color:#dcebe1;text-align:center;padding:25px 18px}
+.small-note{color:#607166;font-size:14px}
+@media(max-width:650px){nav a{display:none}.hero{padding:42px 18px}.nav{align-items:flex-start}.lang{margin-left:auto}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="logo"><span>వెంకట దుర్గా స్టోర్స్</span>Venkata Durga Stores</div>
+<nav><a href="#shop" data-te="షాప్" data-en="Shop">షాప్</a><a href="#offers" data-te="ఆఫర్లు" data-en="Offers">ఆఫర్లు</a><a href="#contact" data-te="సంప్రదించండి" data-en="Contact">సంప్రదించండి</a></nav>
+<button class="lang" onclick="toggleLanguage()">English</button>
+</div></header>
+
+<div class="hero"><div class="hero-inner">
+<span class="badge" data-te="మత్స్యపురి సెంటర్ • ఉదయం 7:00 – రాత్రి 10:00 వరకు" data-en="Matsyapuri Center • Open 7:00 AM – 10:00 PM">మత్స్యపురి సెంటర్ • ఉదయం 7:00 – రాత్రి 10:00 వరకు</span>
+<h1 data-te="మీ రోజువారీ సరుకులన్నీ ఒకే చోట." data-en="Your everyday groceries, all in one place.">మీ రోజువారీ సరుకులన్నీ ఒకే చోట.</h1>
+<p data-te="వెంకట దుర్గా స్టోర్స్‌లో మీకు కావాల్సిన రోజువారీ సరుకులను సులభంగా కొనండి. మీకు కావాల్సిన వస్తువులను కార్ట్‌లో వేసి నేరుగా వాట్సాప్‌లో ఆర్డర్ పంపండి." data-en="Shop your daily essentials from Venkata Durga Stores. Add products to your cart and send your order directly through WhatsApp.">వెంకట దుర్గా స్టోర్స్‌లో మీకు కావాల్సిన రోజువారీ సరుకులను సులభంగా కొనండి. మీకు కావాల్సిన వస్తువులను కార్ట్‌లో వేసి నేరుగా వాట్సాప్‌లో ఆర్డర్ పంపండి.</p>
+<a class="btn primary" href="#shop" data-te="ఇప్పుడే షాపింగ్ చేయండి" data-en="Shop Now">ఇప్పుడే షాపింగ్ చేయండి</a>
+<a class="btn secondary" href="https://wa.me/919999999999" target="_blank" data-te="వాట్సాప్‌లో ఆర్డర్ చేయండి" data-en="Order on WhatsApp">వాట్సాప్‌లో ఆర్డర్ చేయండి</a>
+</div></div>
+
+<section><h2 data-te="వర్గాల వారీగా షాపింగ్ చేయండి" data-en="Shop by Category">వర్గాల వారీగా షాపింగ్ చేయండి</h2><div class="categories">
+<div class="cat">🌾<br>బియ్యం & ధాన్యాలు<br><span class="small-note">Rice & Grains</span></div>
+<div class="cat">🥣<br>పప్పులు<br><span class="small-note">Dals & Pulses</span></div>
+<div class="cat">🫗<br>వంట నూనెలు<br><span class="small-note">Cooking Oils</span></div>
+<div class="cat">🌶️<br>మసాలాలు<br><span class="small-note">Spices</span></div>
+<div class="cat">🍪<br>బిస్కెట్లు & స్నాక్స్<br><span class="small-note">Snacks</span></div>
+<div class="cat">🥛<br>పాల ఉత్పత్తులు<br><span class="small-note">Dairy</span></div>
+<div class="cat">🧴<br>వ్యక్తిగత సంరక్షణ<br><span class="small-note">Personal Care</span></div>
+<div class="cat">🧹<br>ఇంటి అవసరాలు<br><span class="small-note">Household</span></div>
+</div></section>
+
+<section id="shop"><h2 data-te="ప్రసిద్ధ ఉత్పత్తులు" data-en="Popular Products">ప్రసిద్ధ ఉత్పత్తులు</h2><div class="products">
+<div class="card"><div class="pic">🌾</div><div class="card-body"><h3>బియ్యం – 5 కిలోలు<br><span class="small-note">Rice – 5 kg</span></h3><div class="price">₹350</div><button class="add" onclick="add('బియ్యం – 5 కిలోలు / Rice – 5 kg',350)" data-te="కార్ట్‌లో చేర్చండి" data-en="Add to Cart">కార్ట్‌లో చేర్చండి</button></div></div>
+<div class="card"><div class="pic">🥣</div><div class="card-body"><h3>కందిపప్పు – 1 కిలో<br><span class="small-note">Toor Dal – 1 kg</span></h3><div class="price">₹160</div><button class="add" onclick="add('కందిపప్పు – 1 కిలో / Toor Dal – 1 kg',160)" data-te="కార్ట్‌లో చేర్చండి" data-en="Add to Cart">కార్ట్‌లో చేర్చండి</button></div></div>
+<div class="card"><div class="pic">🫗</div><div class="card-body"><h3>వంట నూనె – 1 లీటర్<br><span class="small-note">Cooking Oil – 1 L</span></h3><div class="price">₹150</div><button class="add" onclick="add('వంట నూనె – 1 లీటర్ / Cooking Oil – 1 L',150)" data-te="కార్ట్‌లో చేర్చండి" data-en="Add to Cart">కార్ట్‌లో చేర్చండి</button></div></div>
+<div class="card"><div class="pic">🌶️</div><div class="card-body"><h3>కారం పొడి – 200 గ్రాములు<br><span class="small-note">Chilli Powder – 200 g</span></h3><div class="price">₹70</div><button class="add" onclick="add('కారం పొడి – 200 గ్రాములు / Chilli Powder – 200 g',70)" data-te="కార్ట్‌లో చేర్చండి" data-en="Add to Cart">కార్ట్‌లో చేర్చండి</button></div></div>
+</div></section>
+
+<section id="offers"><div class="offer"><h2 data-te="ప్రత్యేక ఆఫర్లు" data-en="Special Offers">ప్రత్యేక ఆఫర్లు</h2><p data-te="మీ వారపు లేదా నెలవారీ ఆఫర్లను ఇక్కడ చూపించవచ్చు." data-en="Your weekly or monthly offers can be displayed here.">మీ వారపు లేదా నెలవారీ ఆఫర్లను ఇక్కడ చూపించవచ్చు.</p><a class="btn primary" href="https://wa.me/919999999999" target="_blank" data-te="ఆఫర్ల గురించి అడగండి" data-en="Ask About Offers">ఆఫర్ల గురించి అడగండి</a></div></section>
+
+<section id="contact" class="contact"><h2 data-te="వెంకట దుర్గా స్టోర్స్‌ను సందర్శించండి" data-en="Visit Venkata Durga Stores">వెంకట దుర్గా స్టోర్స్‌ను సందర్శించండి</h2><div class="contact-box">
+<div class="info"><strong>📍 <span data-te="చిరునామా" data-en="Location">చిరునామా</span></strong>మత్స్యపురి సెంటర్<br>Matsyapuri Center</div>
+<div class="info"><strong>📞 <span data-te="ఫోన్ / వాట్సాప్" data-en="Phone / WhatsApp">ఫోన్ / వాట్సాప్</span></strong>9999999999</div>
+<div class="info"><strong>🕐 <span data-te="షాప్ సమయాలు" data-en="Store Timings">షాప్ సమయాలు</span></strong>ఉదయం 7:00 – రాత్రి 10:00<br>7:00 AM – 10:00 PM</div>
+</div></section>
+
+<button class="cart" onclick="checkout()">🛒 <span data-te="కార్ట్" data-en="Cart">కార్ట్</span> (<span id="count">0</span>)</button>
+<footer>© 2026 వెంకట దుర్గా స్టోర్స్ | Venkata Durga Stores • Matsyapuri Center</footer>
+
+<script>
+let lang='te', cart=[];
+function toggleLanguage(){
+ lang=lang==='te'?'en':'te';
+ document.documentElement.lang=lang;
+ document.querySelector('.lang').textContent=lang==='te'?'English':'తెలుగు';
+ document.querySelectorAll('[data-te]').forEach(el=>el.textContent=el.getAttribute(lang==='te'?'data-te':'data-en'));
+}
+function add(name,price){cart.push({name,price});document.getElementById('count').textContent=cart.length;alert(lang==='te'?'కార్ట్‌లో చేర్చబడింది: '+name:'Added to cart: '+name);}
+function checkout(){
+ if(!cart.length){alert(lang==='te'?'మీ కార్ట్ ఖాళీగా ఉంది. ముందుగా ఉత్పత్తులను చేర్చండి.':'Your cart is empty. Add some products first.');return}
+ let total=cart.reduce((s,x)=>s+x.price,0);
+ let text='Hello Venkata Durga Stores! I would like to order:%0A%0A'+cart.map((x,i)=>(i+1)+'. '+x.name+' - ₹'+x.price).join('%0A')+'%0A%0ATotal: ₹'+total+'%0A%0AName:%0AAddress:%0A';
+ location.href='https://wa.me/919999999999?text='+text;
+}
+</script>
+</body>
+</html>
